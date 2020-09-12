@@ -9,7 +9,7 @@ function displayUser(username) {
 
 		/*== About ==*/
 		placeHtml(
-			"Home",
+			"",
 			`
 			`
 		);

@@ -37,6 +37,10 @@
 	color: var(--logo-Green);
 }
 
+.title {
+	color: var(--Foreground);
+}
+
 .navbar {
 	width: 300px;
 	height: 100%;
@@ -134,160 +138,10 @@
 	transform: scaleX(1);
 }
 
-/* Search bits */
-
-/* Start the search form styles */
-
-[role="search"] {
-	box-sizing: border-box;
-	border-radius: 0.5em;
-	border: 1px solid transparent;
-	padding: 0;
-	/*max-width: 36em;*/
-	line-height: 1.6;
-	display: inline-block;
-	line-height: 0;
-	transition: all 0.2s ease-in;
-	background-color: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.5);
+.home {
 	width: 100%;
+	height: 100vh;
 }
-
-[role="search"].notempty {
-	background-color: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-[role="search"]::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-[role="search"] label {
-	display: inline-block;
-	overflow: hidden;
-	margin: 0;
-	padding: 0 0 0.5em 0;
-	float: left;
-	cursor: pointer;
-	transition: all 0.2s ease-in;
-	text-indent: -1000px;
-	width: 0;
-}
-
-[role="search"] label svg {
-	fill: #fff;
-	width: 1.5em;
-	margin-top: 0.5em; /* Must go away for IE. Ugh. */
-	transition: all 0.2s ease-in;
-}
-
-[role="search"] input[type="text"]:focus ~ label svg,
-[role="search"].notempty label svg {
-	fill: transparent;
-}
-
-[role="search"] input[type="text"] {
-	border: none;
-	border-radius: 0.5em;
-	background-color: transparent;
-	margin: 0;
-	padding: 0.5em 0.75em;
-	width: 65%;
-	width: calc(100% - 4em);
-	transition: all 0.2s ease-in;
-}
-
-[role="search"] input[type="text"]:focus {
-	outline: none;
-	background-color: #fff; /* Needed for non-JS */
-}
-
-input::-webkit-input-placeholder {
-	color: #757575; /* a11y FTW! */
-}
-
-input:-ms-input-placeholder {
-	color: #757575; /* a11y FTW! */
-}
-
-input::-moz-placeholder {
-	color: #757575; /* a11y FTW! */
-	opacity: 1; /* https://www.quirksmode.org/blog/archives/2015/12/styling_placeho.html */
-}
-
-[role="search"] button {
-	font-size: 90%; /* This allows the width in ems to scale  */
-	width: 2em;
-	height: auto;
-	margin: 0.3em 0.25em 0 0.25em;
-	border: none;
-	padding: 0;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.2s ease-in;
-	float: right;
-}
-
-[role="search"] button:hover,
-[role="search"] button:focus {
-	outline: none;
-}
-
-[role="search"] input[type="text"]:focus ~ button,
-[role="search"].notempty button {
-	float: right;
-	text-indent: 0;
-	width: 2em;
-	display: block;
-}
-
-[role="search"] button svg {
-	display: block;
-	margin: 0 auto;
-	padding-right: 0.2em;
-	fill: #757575;
-	width: 100%;
-	height: auto;
-	transition: all 0.2s ease-in;
-}
-
-@media all and (min-width: 24em) {
-	[role="search"] {
-		background-color: transparent;
-		border: 1px solid rgba(0, 0, 0, 0);
-		width: auto;
-	}
-
-	[role="search"] label {
-		text-indent: 0;
-		width: auto;
-	}
-
-	[role="search"] input[type="text"]:focus ~ label,
-	[role="search"].notempty label {
-		text-indent: -1000px;
-		width: 0;
-	}
-
-	[role="search"] input[type="text"] {
-		width: 0.07em; /* Must have min width or Safari won't work*/
-		padding: 0;
-		float: left;
-	}
-
-	/*[role="search"] label:matches(:hover, :focus) /for/ input, CSS Selectors 4, 13.5. Reference combinators http://www.w3.org/TR/selectors4/#idref-combinators, no support */
-	[role="search"] input[type="text"]:focus,
-	[role="search"].notempty input[type="text"] {
-		padding: 0.5em 0.75em;
-		width: 65%;
-		width: calc(100% - 5.5em); /* changed from 4em */
-	}
-
-	[role="search"] button {
-		display: none;
-		width: 0;
-		text-indent: -1000px;
-	}
+.btn {
+	color: var(--logo-Green);
 }
