@@ -4,13 +4,14 @@ import { placeHtml } from "./place";
 function displayUser(username) {
 	getUser(username).then((user) => {
 		let basics = user.basics;
-		placeHtml("name", basics.name);
+		// placeHtml("perfil", basics.picture);
 		console.log(basics);
 
-		/*== About ==*/
+		/*== Home ==*/
 		placeHtml(
 			"",
 			`
+			
 			`
 		);
 	});
