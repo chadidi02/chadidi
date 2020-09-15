@@ -4,29 +4,14 @@
 
 @tailwind utilities;
 
-.scrollbar-w-2::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
-}
-.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
-	border-radius: 25rem;
-}
-.scrollbar-thumb-gray::-webkit-scrollbar-thumb {
-	background-color: #aaaaaa;
-}
-.scrollbar-track-gray-lighter::-webkit-scrollbar-track {
-	background-color: #eeeeee;
-}
-
 :root {
 	--background-1: #282a36;
-	--background: #1f1f1f;
-	--navbar-2: #282a36;
+	--background: #e8e8e8;
 	--navbar: #1f1f1f;
-	--Foreground: #f8f8f2;
+	--Foreground: #414141;
 	--logo-Green: #50fa7b;
+	--skills: #504c4d;
 }
-
 .background {
 	background: var(--background);
 }
@@ -38,7 +23,21 @@
 .logo {
 	color: var(--logo-Green);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--Foreground);
+}
+p,
+small {
+	color: var(--Foreground);
+}
+.text {
+	color: var(--Foreground);
+}
 .title {
 	color: var(--Foreground);
 }
@@ -142,4 +141,42 @@
 
 .btn {
 	color: var(--logo-Green);
+}
+
+/*===== HOME =====*/
+.home {
+	background: linear-gradient(
+			to right,
+			rgba(31, 31, 31, 0.6),
+			rgba(31, 31, 31, 0.6)
+		),
+		url("../views/images/pc.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	height: 500px;
+}
+
+/*===== SKILLS =====*/
+.ui,
+.html,
+.css,
+.js {
+	background-color: var(--skills);
+}
+
+.ui {
+	width: 90%;
+}
+.html {
+	width: 90%;
+}
+.css {
+	width: 80%;
+}
+.js {
+	width: 40%;
+}
+
+.about__img {
+	max-width: 380px;
 }

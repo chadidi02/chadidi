@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body class="background ">
-    <header class=" sticky top-0 ">
+    <header class="  fixed top-0 left-0 right-0 z-30">
         <div class="">
             <div class="w-full flex flex-row items-center px-8 py-1 md:py-3 justify-between navber shadow"
                 style="height: 80px;">
@@ -47,52 +47,104 @@
             </div>
         </div>
     </header>
-    <main class=" h-screen">
+    <main class=" h-screen " style="margin-top: 80px;">
         <!--===== HOME =====-->
-        <section class=" w-full h-screen home">
-            <div class="mt-20">
-                <div class="flex ">
-                    <div class="w-1/2 h-full flex justify-center items-center">
-                        <div class="home__title title text-6xl uppercase inline-block ">
-                            <h1>Hello,</h1>
-                            <h1>Everyone</h1>
+        <section class=" w-full  home relative ">
+            <div class=" flex flex-wrap absolute left-0 right-0 my-16 md:my-40 mx-12">
+                <div class="w-full md:w-1/2 h-full">
+
+                    <div class="md:flex rounded-lg pt-6">
+                        <img class="home__img h-32 w-32 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-10"
+                            src="../images/icons/profile.svg">
+                        <div class="text-center md:text-left home__title">
+                            <h2 id="name" class="text-white text-3xl whitespace-pre my-2 tracking-widest"></h2>
+                            <div class="text-gray-200 mb-1 text-base">Front End Developer / WordPress Expert </div>
+                            <div id="email" class="text-gray-200 mb-1 text-base"></div>
+                            <div id="phone" class="text-gray-200 text-base lining-nums"></div>
                         </div>
                     </div>
-                    <div class="w-1/2 h-full flex justify-center items-center">
-                        <div class="">
-                            <img class="home__img w-64 h-64 border-indigo-500 hover:border-indigo-700 border-4 border-collapse rounded-full"
-                                src="../images/icons/profile.svg" alt="perfil">
-                        </div>
+
+                </div>
+                <!-- ====++=== -->
+                <div class="w-full md:w-1/2 ">
+                    <div class="flex justify-center md:justify-end my-5 md:my-20 home__btn">
+                        <a
+                            class=" bg-transparent hover:bg-gray-100 text-white font-semibold hover:text-black py-2 px-4 border border-white hover:opacity-50 hover:border-transparent rounded-full">
+                            CONTACT ME
+                        </a>
+                        <a
+                            class="bg-transparent ml-5 hover:bg-gray-100 text-white font-semibold hover:text-black py-2 px-4 border border-white hover:opacity-50 hover:border-transparent rounded-full">
+                            DOWNLOAD AS PDF
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-
-
         <!--===== ABOUT =====-->
-        <section class=" w-full h-screen" id="about">
-
-            <h2 class=" text-3xl title flex justify-center ">About</h2>
-            <div class="flex ">
-                <div class="w-1/2 h-full home flex justify-center items-center">
-                    <div class="about__img">
-                        <img class=" w-64 h-64 border-indigo-500 hover:border-indigo-700 border-4 border-collapse rounded-full"
-                            src="../images/icons/profile.svg" alt="perfil">
+        <section class="">
+            <div class="mb-10">
+                <div class="flex flex-wrap">
+                    <div class="w-full sm:w-1/2">
+                        <h1 class="about__subtitle title p-10 text-center">
+                            About Me
+                        </h1>
+                    </div>
+                    <div class="w-full sm:w-1/2">
+                        <p class="px-10 about__text my-8">
+                            the idea of beauty is the fundamental idea of everything. In the
+                            world we see only distortions of the fundamental idea, but art, by imagination, may lift
+                            itself
+                            to the height of this idea. Art is therefore akin to creation.
+                        </p>
                     </div>
                 </div>
-                <div class="w-1/2 h-full flex justify-center items-center ">
-                    <div>
-                        <h2 class="about__subtitle text-indigo-600">I'am Jhon Doe</h2>
-                        <span class="about__profession text-gray-400">Web designer</span>
-                        <p class="about__text text-purple-200">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Adipisci
-                            consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae
-                            blanditiis.</p>
+                <div class="flex flex-wrap">
+                    <div class="w-full sm:w-1/2">
+                        <div class="about__img m-auto p-1"> <img class="w-full h-full mb-6 md:mb-5"
+                                src="../images/me.png" alt=""> </div>
+                    </div>
+                    <!-- skills -->
+                    <div class="w-full sm:w-1/2">
+                        <div class="px-10 m-auto">
+                            <!-- skills -->
+                            <div class=" py-3  about__skills">
+                                <h1 class=" text-xl title">My Skills.</h1>
 
-                        <div class="about__social">
-                            <a href="#" class="about__social-icon"><i class='fas fa-linkedin'></i></a>
-                            <a href="#" class="about__social-icon"><i class='fas fa-github'></i></a>
-                            <a href="#" class="about__social-icon"><i class='fas fa-dribbble'></i></a>
+                                <div class=" relative mt-8">
+                                    <p class=" text-sm text-gray-700">UI & web design</p>
+                                    <span class="absolute inset-y-0 right-0 mr-3 text-sm text-gray-700">90%</span>
+                                    <div class="w-full  bg-gray-500 mt-3">
+                                        <div class="text-right ui  py-px  html">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" relative mt-8">
+                                    <p class=" text-sm text-gray-700">HTML</p>
+                                    <span class="absolute inset-y-0 right-0 mr-3 text-sm text-gray-700">90%</span>
+                                    <div class="w-full  bg-gray-500 mt-3">
+                                        <div class="text-right   py-px  html">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" relative mt-8">
+                                    <p class=" text-sm text-gray-700">CSS</p>
+                                    <span class="absolute inset-y-0 right-0 mr-3 text-sm text-gray-700">80%</span>
+                                    <div class="w-full  bg-gray-500 mt-3">
+                                        <div class="text-right   py-px  css">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" relative mt-8">
+                                    <p class=" text-sm text-gray-700">JavaScript</p>
+                                    <span class="absolute inset-y-0 right-0 mr-3 text-sm text-gray-700">40%</span>
+                                    <div class="w-full  bg-gray-500 mt-3">
+                                        <div class="text-right   py-px  js">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end of skills -->
                         </div>
                     </div>
                 </div>
