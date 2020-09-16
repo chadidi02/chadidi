@@ -6,10 +6,10 @@
 
 :root {
 	--background-1: #282a36;
-	--background: #e8e8e8;
+	--background: rgb(255, 255, 255);
 	--navbar: #e8e8e8;
 	--Foreground: #414141;
-	--logo-Green: #d49c00;
+	--logo-Green: rgb(23, 191, 99);
 	--skills: #504c4d;
 }
 .background {
