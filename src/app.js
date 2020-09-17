@@ -6,7 +6,7 @@ menuIcon.addEventListener("click", () => {
 });
 
 // Header
-var menu = document.querySelector("Header");
+let menu = document.querySelector("Header");
 
 window.onscroll = function () {
 	// pageYOffset or scrollY
@@ -15,6 +15,27 @@ window.onscroll = function () {
 	} else {
 		menu.classList.remove("scrolled");
 	}
+};
+
+// Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+let img = document.getElementById("myImg");
+let modalImg = document.getElementById("img01");
+let captionText = document.getElementById("caption");
+img.onclick = function () {
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+};
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+	modal.style.display = "none";
 };
 
 /*===== SCROLL REVEAL ANIMATION =====*/
@@ -26,15 +47,15 @@ const sr = ScrollReveal({
 });
 
 /*SCROLL HOME*/
-sr.reveal(".home__title", { origin: "right", delay: 600 });
-sr.reveal(".home__img", { origin: "left", delay: 600 });
-sr.reveal(".home__btn", { delay: 400 });
+sr.reveal(".home__title", {});
+sr.reveal(".home__scroll", { delay: 200 });
+sr.reveal(".home__img", { origin: "right", delay: 400 });
 
-// // /*SCROLL ABOUT*/
+/*SCROLL ABOUT*/
 sr.reveal(".about__img", { delay: 500 });
 sr.reveal(".about__subtitle", { delay: 300 });
-sr.reveal(".about__skills", { delay: 400 });
-sr.reveal(".about__text", { origin: "right", delay: 600 });
+sr.reveal(".about__profession", { delay: 400 });
+sr.reveal(".about__text", { delay: 500 });
 sr.reveal(".about__social-icon", { delay: 600, interval: 200 });
 
 /*SCROLL SKILLS*/
@@ -44,6 +65,7 @@ sr.reveal(".skills__img", { delay: 400 });
 
 /*SCROLL PORTFOLIO*/
 sr.reveal(".portfolio__img", { interval: 200 });
+sr.reveal(".portfolio__subtitle", { delay: 300 });
 
 /*SCROLL CONTACT*/
 sr.reveal(".contact__subtitle", {});
