@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body class="background ">
     <header class="  fixed top-0 left-0 right-0 z-30">
         <div class="">
-            <div class="w-full flex flex-row items-center px-8 py-1 md:py-3 justify-between navber shadow "
-                style="height: 80px;">
+            <div class="w-full flex flex-row items-center px-8 py-px md:py-1 justify-between navber shadow-sm "
+                style="height: 50px;">
                 <!-- nav-menu -->
-                <div class="">
+                <div class="relative">
                     <nav
                         class="navbar  z-20 overflow-auto h-screen scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray scrolling-touch lg:max-h-sm">
                         <div class="hamburger-menu">
@@ -30,7 +30,7 @@
                             <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="#Portfolio" class="nav-link">Portfolio</a></li>
-                            <li class="nav-item"><a href="#Blog" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
                             <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
                         </ul>
                     </nav>
@@ -46,16 +46,16 @@
             </div>
         </div>
     </header>
-    <main class=" h-screen " style="margin-top: 80px;">
+    <main class=" h-screen " style="margin-top: 50px;">
         <!--===== HOME =====-->
         <section class=" w-full  home relative ">
             <div class=" flex flex-wrap absolute left-0 right-0 my-16 md:my-40 mx-12">
                 <div class="w-full md:w-1/2 h-full">
 
                     <div class="md:flex rounded-lg pt-6">
-                        <img class="home__img h-32 w-32 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-10"
+                        <img class=" h-32 w-32 md:h-40 md:w-40 rounded-full mx-auto md:mx-0 md:mr-10"
                             src="../images/icons/profile.svg">
-                        <div class="text-center md:text-left home__title">
+                        <div class="text-center md:text-left">
                             <h2 id="name" class="text-white text-3xl whitespace-pre my-2 tracking-widest"></h2>
                             <div class="text-gray-200 mb-1 text-base">Front End Developer / WordPress Expert </div>
                             <div id="email" class="text-gray-200 mb-1 text-base"></div>
@@ -84,12 +84,12 @@
             <div class="mb-10">
                 <div class="flex flex-wrap">
                     <div class="w-full sm:w-1/2">
-                        <h1 class="about__subtitle title p-10 text-center text-5xl">
+                        <h1 class=" title p-10 text-center text-5xl">
                             About Me
                         </h1>
                     </div>
                     <div class="w-full sm:w-1/2">
-                        <p class="px-10 about__text my-8">
+                        <p class="px-10  my-8">
                             the idea of beauty is the fundamental idea of everything. In the
                             world we see only distortions of the fundamental idea, but art, by imagination, may lift
                             itself
@@ -100,14 +100,15 @@
                 <div class="flex flex-wrap">
                     <div class="w-full sm:w-1/2">
                         <div class="about__img m-auto p-1"> <img class="w-full h-full mb-6 md:mb-5"
-                                src="../images/me.png" alt=""> </div>
+                                src="../images/me.png" alt="">
+                        </div>
                     </div>
                     <!-- skills -->
                     <div class="w-full sm:w-1/2">
                         <div class="px-10 m-auto">
                             <!-- skills -->
-                            <div class=" py-3  about__skills">
-                                <h1 class=" text-xl title skills__name">My Skills.</h1>
+                            <div class=" py-3 ">
+                                <h1 class=" text-xl title ">My Skills.</h1>
 
                                 <div class=" relative mt-8">
                                     <p class=" text-sm text-gray-700">UI & web design</p>
@@ -152,7 +153,7 @@
         <!--===== Portfolio =====-->
         <section>
             <div class="">
-                <h1 class="portfolio__subtitle title p-10 text-center text-5xl">
+                <h1 class=" title p-10 text-center text-5xl">
                     Portfolio
                 </h1>
             </div>
@@ -160,7 +161,7 @@
                 <div class="flex flex-row flex-wrap">
 
                     <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
-                        <div class="relative bg-white rounded border portfolio__img">
+                        <div class="relative bg-white rounded border ">
                             <picture class="block bg-gray-200 border-b">
                                 <img id="myImg" class=" w-full" src="../images/pexels-francesco-ungaro-1525041.jpg"
                                     alt="Snow">
@@ -169,7 +170,7 @@
                     </div>
 
                     <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
-                        <div class="relative bg-white rounded border portfolio__img">
+                        <div class="relative bg-white rounded border ">
                             <picture class="block bg-gray-200 border-b">
                                 <img id="myImg" class=" w-full" src="../images/pexels-francesco-ungaro-1525041.jpg"
                                     alt="Snow">
@@ -178,7 +179,7 @@
                     </div>
 
                     <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
-                        <div class="relative bg-white rounded border portfolio__img">
+                        <div class="relative bg-white rounded border ">
                             <picture class="block bg-gray-200 border-b">
                                 <img id="myImg" class=" w-full" src="../images/pexels-francesco-ungaro-1525041.jpg"
                                     alt="Snow">
@@ -187,7 +188,7 @@
                     </div>
 
                     <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
-                        <div class="relative bg-white rounded border portfolio__img">
+                        <div class="relative bg-white rounded border ">
                             <picture class="block bg-gray-200 border-b">
                                 <img id="myImg" class=" w-full" src="../images/pexels-francesco-ungaro-1525041.jpg"
                                     alt="Snow">
@@ -196,6 +197,119 @@
                     </div>
 
                 </div>
+        </section>
+        <!--===== Blog =====-->
+        <section>
+            <div class=" my-5 md:my-10 mx-5 md:mx-32">
+                <div class="flex flex-wrap">
+                    <div class="w-full sm:w-1/2 flex items-stretch">
+                        <h1 class="title p-10 self-center flex-1 flex justify-center text-3xl md:text-5xl">
+                            NEW IN BLOG
+                        </h1>
+                    </div>
+                    <div class=" w-full sm:w-1/2">
+                        <div class=" px-5 blog__img">
+                            <img class="w-full h-full mb-6 md:mb-5 rounded-lg" src="../images/pc.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap">
+
+                    <div class="w-full sm:w-1/2">
+                        <p class="px-6 my-5">
+                            the idea of beauty is the fundamental idea of everything. In the
+                            world we see only distortions of the fundamental idea, but art, by imagination, may lift
+                            itself
+                            to the height of this idea. Art is therefore akin to creation.
+                        </p>
+                    </div>
+                    <div class="w-full sm:w-1/2">
+                        <div class=" justify-center flex items-stretch ">
+                            <a href=" "
+                                class=" flex justify-center mt-10  bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                                VIEW ALL POSTS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== Contact =====-->
+        <section class="my-5 md:my-10 mx-5 md:mx-32">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2">
+                    <div class="">
+                        <h1 class="title py-10 self-center flex-1 text-3xl md:text-5xl">
+                            CONTACTS</h1>
+                        <p class="py-3">
+                            the idea of beauty is the fundamental idea of everything. In the world we see only
+                            distortions of the fundamental idea, but art, by imagination, may lift itself to the height
+                            of this idea. Art is therefore akin to creation.
+                        </p>
+
+                        <p class="py-3">
+                            Morocco, Tetouan
+                        </p>
+
+                        <p class="py-3">
+                            s.chadidi02@gmail.com
+                        </p>
+                        <p class="py-3">
+                            +212 628 976 549
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <form class="w-full max-w-md">
+                        <div class="flex flex-wrap -mx-px mb-6">
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="grid-password">
+                                    Name
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="nick" type="text">
+                                <p class="text-gray-600 text-xs italic">Remove if not needed</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap -mx-px mb-6">
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="grid-password">
+                                    E-mail
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="email" type="email">
+                                <p class="text-gray-600 text-xs italic">Some tips - as long as needed</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap -mx-px mb-6">
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="grid-password">
+                                    Message
+                                </label>
+                                <textarea
+                                    class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-32 resize-none"
+                                    id="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="md:flex md:items-center">
+                            <div class="md:w-1/3">
+                                <button
+                                    class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                                    type="button">
+                                    Send
+                                </button>
+                            </div>
+                            <div class="md:w-2/3"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>

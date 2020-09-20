@@ -7,7 +7,7 @@
 :root {
 	--background-1: #282a36;
 	--background: rgb(255, 255, 255);
-	--navbar: #e8e8e8;
+	--navbar: #ffffff;
 	--Foreground: #414141;
 	--logo-Green: rgb(23, 191, 99);
 	--skills: #504c4d;
@@ -45,9 +45,9 @@ small {
 .navbar {
 	width: 300px;
 	height: 100%;
-	background-color: var(--background);
+	background-color: var(--navbar);
 	position: fixed;
-	top: 0;
+	top: -5px;
 	left: -300px;
 
 	display: flex;
@@ -63,8 +63,8 @@ small {
 	width: 20px;
 	height: 20px;
 	position: fixed;
-	top: 28px;
-	left: 50px;
+	top: 18px;
+	left: 32px;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
@@ -178,7 +178,7 @@ small {
 }
 
 .about__img {
-	max-width: 380px;
+	max-width: 400px;
 }
 
 #myImg {
